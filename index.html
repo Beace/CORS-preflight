@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CORS-preflight</title>
+  </head>
+  <body>
+    <h1>CORS-preflight</h1>
+    <script>
+      fetch('http://localhost:3000', {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Auth-Token': 'auth-token',
+        },
+        body: JSON.stringify({
+          hello: 'world'
+        })
+      })
+        .then(res => res.text())
+        .then(data => console.log(data));
+    </script>
+  </body>
+</html>
