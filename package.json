@@ -1,0 +1,21 @@
+{
+  "name": "CORS-preflight",
+  "version": "1.0.0",
+  "description": "CORS-preflight demo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "client": "node server2.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeAce/CORS-preflight.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeAce/CORS-preflight/issues"
+  },
+  "homepage": "https://github.com/BeAce/CORS-preflight#readme"
+}
